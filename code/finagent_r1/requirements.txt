@@ -1,0 +1,7 @@
+# Data preparation / offline evaluation.
+# The training stack (torch, verl==0.7.0, vllm, ray, transformers, hydra)
+# must be installed following verl's official installation guide for your
+# CUDA version; see docs/02_runbook.md.
+pandas>=2.0
+pyarrow>=14.0
+numpy>=1.24

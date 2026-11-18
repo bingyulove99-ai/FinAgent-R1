@@ -1,0 +1,89 @@
+[
+  {
+    "id": "Single_ACME/2021/page_10.pdf-1",
+    "filename": "ACME/2021/page_10.pdf",
+    "pre_text": [
+      "ACME Corporation designs industrial sensors. The following discussion compares fiscal 2021 with fiscal 2020.",
+      "Revenue is recognised when control of the product transfers to the customer."
+    ],
+    "post_text": [
+      "Management expects demand to remain stable in the near term."
+    ],
+    "table": [
+      ["", "2021", "2020"],
+      ["Revenue", "100.0", "80.0"],
+      ["Gross profit", "40.0", "30.0"],
+      ["Net income", "10.0", "8.0"]
+    ],
+    "question": "What was the percentage growth in ACME revenue from 2020 to 2021?",
+    "answer": "25%",
+    "program": ["subtract(100, 80)", "divide(20, 80)", "multiply(0.25, 100)"],
+    "gold_inds": {
+      "table_1": "Revenue | 100.0 | 80.0"
+    },
+    "exe_ans": 25.0
+  },
+  {
+    "id": "Single_ACME/2021/page_10.pdf-2",
+    "filename": "ACME/2021/page_10.pdf",
+    "pre_text": [
+      "ACME Corporation designs industrial sensors. The following discussion compares fiscal 2021 with fiscal 2020."
+    ],
+    "post_text": [],
+    "table": [
+      ["", "2021", "2020"],
+      ["Revenue", "100.0", "80.0"],
+      ["Gross profit", "40.0", "30.0"],
+      ["Net income", "10.0", "8.0"]
+    ],
+    "question": "What was ACME's gross profit margin in 2021?",
+    "answer": "40%",
+    "program": ["divide(40, 100)", "multiply(0.4, 100)"],
+    "gold_inds": {
+      "table_1": "Gross profit | 40.0 | 30.0"
+    },
+    "exe_ans": 40.0
+  },
+  {
+    "id": "Single_ACME/2022/page_12.pdf-1",
+    "filename": "ACME/2022/page_12.pdf",
+    "pre_text": [
+      "ACME reported higher revenue in fiscal 2022 on stable pricing."
+    ],
+    "post_text": [],
+    "table": [
+      ["", "2022", "2021"],
+      ["Revenue", "120.0", "100.0"],
+      ["Gross profit", "60.0", "40.0"],
+      ["Net income", "12.0", "10.0"]
+    ],
+    "question": "What was the percentage growth in ACME revenue from 2021 to 2022?",
+    "answer": "20%",
+    "program": ["subtract(120, 100)", "divide(20, 100)", "multiply(0.2, 100)"],
+    "gold_inds": {
+      "table_1": "Revenue | 120.0 | 100.0"
+    },
+    "exe_ans": 20.0
+  },
+  {
+    "id": "Single_BETA/2021/page_7.pdf-1",
+    "filename": "BETA/2021/page_7.pdf",
+    "pre_text": [
+      "BETA Systems sells software licences and support contracts."
+    ],
+    "post_text": [],
+    "table": [
+      ["", "2021", "2020"],
+      ["Revenue", "150.0", "120.0"],
+      ["Operating income", "30.0", "24.0"],
+      ["Net income", "18.0", "12.0"]
+    ],
+    "question": "What was BETA's operating margin in 2021?",
+    "answer": "20%",
+    "program": ["divide(30, 150)", "multiply(0.2, 100)"],
+    "gold_inds": {
+      "table_1": "Operating income | 30.0 | 24.0"
+    },
+    "exe_ans": 20.0
+  }
+]

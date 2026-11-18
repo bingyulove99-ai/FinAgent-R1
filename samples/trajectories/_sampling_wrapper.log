@@ -1,0 +1,13 @@
+[10:38:44] sampling base_react
+[10:41:05] base_react exit=0 rows=12
+[10:41:10] sampling grpo
+[10:42:44] grpo exit=0 rows=12
+[10:42:50] sampling rloo
+[10:44:05] rloo exit=0 rows=12
+[10:44:11] sampling reinforce
+[10:45:33] reinforce exit=0 rows=12
+[10:45:38] sampling ppo_gae
+[10:48:23] ppo_gae exit=0 rows=12
+[10:48:28] sampling token_gae
+[10:56:00] token_gae exit=0 rows=12
+[10:56:05] ALL TRAJECTORY SAMPLING DONE

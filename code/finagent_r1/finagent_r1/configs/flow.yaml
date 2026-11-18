@@ -1,0 +1,24 @@
+# Agent-R1 agent-flow registry entry.
+# Passed to the trainer through:
+#   actor_rollout_ref.rollout.agent.agent_flow_config_path=...
+# and selected with:
+#   actor_rollout_ref.rollout.agent.default_agent_flow=finqa_agent
+- name: finqa_agent
+  _target_: finagent_r1.flow.FinQAAgentFlow
+
+  # Rollout budget
+  max_steps: 6
+  max_parallel_calls: 2
+  observation_window: 2
+  context_mode: scratchpad_window
+
+  # Prompt context controls
+  max_obs_chars: 6000
+  max_observation_chars: 3500
+  max_scratchpad_items: 8
+  max_history_actions: 10
+
+  # Retrieval corpus.  Environment variables keep the YAML portable.
+  corpus_path: ${oc.env:FINQA_CORPUS_PATH,null}
+  index_path: ${oc.env:FINQA_INDEX_PATH,null}
+  allow_scope_fallback: true

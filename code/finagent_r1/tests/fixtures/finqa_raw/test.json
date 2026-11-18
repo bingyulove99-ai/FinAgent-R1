@@ -1,0 +1,43 @@
+[
+  {
+    "id": "Single_ACME/2021/page_10.pdf-3",
+    "filename": "ACME/2021/page_10.pdf",
+    "pre_text": [
+      "ACME Corporation designs industrial sensors. The following discussion compares fiscal 2021 with fiscal 2020."
+    ],
+    "post_text": [],
+    "table": [
+      ["", "2021", "2020"],
+      ["Revenue", "100.0", "80.0"],
+      ["Gross profit", "40.0", "30.0"],
+      ["Net income", "10.0", "8.0"]
+    ],
+    "question": "What was ACME's net profit margin in 2021?",
+    "answer": "10%",
+    "program": ["divide(10, 100)", "multiply(0.1, 100)"],
+    "gold_inds": {
+      "table_1": "Net income | 10.0 | 8.0"
+    },
+    "exe_ans": 10.0
+  },
+  {
+    "id": "Single_GAMMA/2023/page_5.pdf-1",
+    "filename": "GAMMA/2023/page_5.pdf",
+    "pre_text": [
+      "GAMMA Energy operates renewable generation assets."
+    ],
+    "post_text": [],
+    "table": [
+      ["", "2023", "2022"],
+      ["Revenue", "90.0", "75.0"],
+      ["Operating income", "18.0", "15.0"]
+    ],
+    "question": "What was the percentage growth in GAMMA revenue from 2022 to 2023?",
+    "answer": "20%",
+    "program": ["subtract(90, 75)", "divide(15, 75)", "multiply(0.2, 100)"],
+    "gold_inds": {
+      "table_1": "Revenue | 90.0 | 75.0"
+    },
+    "exe_ans": 20.0
+  }
+]

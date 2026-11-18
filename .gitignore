@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Training artifacts (weights, checkpoints, generated data, logs)
+outputs/
+models/
+checkpoints/
+logs/
+data/finqa/
+*.parquet
+.smoke-deps/
+.smoke-tmp/
+
+# Editors / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
