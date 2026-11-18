@@ -6,6 +6,12 @@ FinAgent-R1 trains [Qwen2.5-3B-Instruct](https://github.com/QwenLM/Qwen2.5) to a
 
 Unlike a single-turn RAG or prompt-based ReAct setup, every tool interaction is a decision step: the environment reshapes the context (evidence scratchpad, sliding observation window, prompt budget), and the policy is rewarded only on the final answer.
 
+## Architecture
+
+![FinAgent-R1 layered architecture](docs/architecture.png)
+
+*Layered view: data pipeline → step-level agent runtime (shared by training and evaluation) → scoped tools → reward/evaluation → Agent-R1/verl training framework → infrastructure. Vector source: [`docs/architecture.svg`](docs/architecture.svg).*
+
 ## Results
 
 Test split: **1,147 FinQA questions**, single seed 42. For each algorithm the checkpoint is selected by dev accuracy.
